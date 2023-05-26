@@ -15,7 +15,7 @@ public class kkk1 : MonoBehaviour
 
     IEnumerator LoadSceneWithTransition()
     {
-        transitionAnimator.SetTrigger("Animation");
+        transitionAnimator.SetTrigger("Animations");
         yield return new WaitForSeconds(1.5f);
         SceneManager.LoadScene(targetScene);
     }
