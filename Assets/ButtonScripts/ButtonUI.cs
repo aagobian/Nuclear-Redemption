@@ -5,7 +5,7 @@ using UnityEngine.SceneManagement;
 
 public class ButtonUI : MonoBehaviour
 {
-    [SerializeField] private string newGameLevel = "Credits";
+    [SerializeField] private string newGameLevel = "Scene1";
 
     public void NewGameButton()
 
