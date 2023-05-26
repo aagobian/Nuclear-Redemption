@@ -134,10 +134,13 @@ GameObject:
   - component: {fileID: 90982107}
   - component: {fileID: 90982111}
   - component: {fileID: 90982110}
+  - component: {fileID: 90982114}
   - component: {fileID: 90982109}
+  - component: {fileID: 90982115}
+  - component: {fileID: 90982113}
   - component: {fileID: 90982108}
   - component: {fileID: 90982112}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Player
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -155,7 +158,9 @@ RectTransform:
   m_LocalPosition: {x: 0, y: 0, z: 100}
   m_LocalScale: {x: 6, y: 6, z: 20}
   m_ConstrainProportionsScale: 0
-  m_Children: []
+  m_Children:
+  - {fileID: 1108613351}
+  - {fileID: 1069817426}
   m_Father: {fileID: 1602767423}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -171,13 +176,14 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 90982106}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: b5ce75d002fdef74989c3f81df8f1d65, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   moveSpeed: 7.5
   jumpForce: 13.5
+  animator: {fileID: 90982112}
 --- !u!61 &90982109
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -191,7 +197,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: -0.049002744}
+  m_Offset: {x: -0.0000003427267, y: -0.05004655}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -202,7 +208,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.3100484, y: 0.3979171}
+  m_Size: {x: 0.24407956, y: 0.37490556}
   m_EdgeRadius: 0
 --- !u!50 &90982110
 Rigidbody2D:
@@ -298,6 +304,64 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &90982113
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 90982106}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4281e59bfd0ab7046990a944b292330a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_JumpForce: 700
+  m_CrouchSpeed: 0
+  m_MovementSmoothing: 0.05
+  m_AirControl: 1
+  m_WhatIsGround:
+    serializedVersion: 2
+    m_Bits: 119
+  m_GroundCheck: {fileID: 1069817426}
+  m_CeilingCheck: {fileID: 1108613351}
+  m_CrouchDisableCollider: {fileID: 0}
+  OnLandEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  OnCrouchEvent:
+    m_PersistentCalls:
+      m_Calls: []
+--- !u!58 &90982114
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 90982106}
+  m_Enabled: 0
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: -0.0031614106, y: -0.10353494}
+  serializedVersion: 2
+  m_Radius: 0.09095099
+--- !u!114 &90982115
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 90982106}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 83672b9170b684148a3fe0c277b51e30, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  controller: {fileID: 90982113}
+  runSpeed: 40
 --- !u!1 &102199066
 GameObject:
   m_ObjectHideFlags: 0
@@ -309,7 +373,7 @@ GameObject:
   - component: {fileID: 102199067}
   - component: {fileID: 102199069}
   - component: {fileID: 102199068}
-  m_Layer: 6
+  m_Layer: 0
   m_Name: IndustrialTile (42)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -385,7 +449,7 @@ GameObject:
   - component: {fileID: 146274158}
   - component: {fileID: 146274160}
   - component: {fileID: 146274159}
-  m_Layer: 6
+  m_Layer: 0
   m_Name: IndustrialTileR (5)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -463,9 +527,9 @@ GameObject:
   - component: {fileID: 171395986}
   - component: {fileID: 171395989}
   - component: {fileID: 171395988}
-  m_Layer: 6
+  m_Layer: 0
   m_Name: IndustrialTile (32)
-  m_TagString: Ground
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -619,9 +683,9 @@ GameObject:
   - component: {fileID: 183440373}
   - component: {fileID: 183440376}
   - component: {fileID: 183440375}
-  m_Layer: 6
+  m_Layer: 0
   m_Name: IndustrialTile (21)
-  m_TagString: Ground
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -773,7 +837,7 @@ GameObject:
   - component: {fileID: 247038140}
   - component: {fileID: 247038142}
   - component: {fileID: 247038141}
-  m_Layer: 6
+  m_Layer: 0
   m_Name: IndustrialTileR (6)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -849,7 +913,7 @@ GameObject:
   - component: {fileID: 251011814}
   - component: {fileID: 251011816}
   - component: {fileID: 251011815}
-  m_Layer: 6
+  m_Layer: 0
   m_Name: IndustrialTileR (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -925,7 +989,7 @@ GameObject:
   - component: {fileID: 274087030}
   - component: {fileID: 274087032}
   - component: {fileID: 274087031}
-  m_Layer: 6
+  m_Layer: 0
   m_Name: IndustrialTile (46)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1003,9 +1067,9 @@ GameObject:
   - component: {fileID: 291950950}
   - component: {fileID: 291950953}
   - component: {fileID: 291950952}
-  m_Layer: 6
+  m_Layer: 0
   m_Name: IndustrialTile (23)
-  m_TagString: Ground
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1159,9 +1223,9 @@ GameObject:
   - component: {fileID: 294417166}
   - component: {fileID: 294417169}
   - component: {fileID: 294417168}
-  m_Layer: 6
+  m_Layer: 0
   m_Name: IndustrialTile
-  m_TagString: Ground
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1315,9 +1379,9 @@ GameObject:
   - component: {fileID: 301341091}
   - component: {fileID: 301341094}
   - component: {fileID: 301341093}
-  m_Layer: 6
+  m_Layer: 0
   m_Name: IndustrialTile (18)
-  m_TagString: Ground
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1471,9 +1535,9 @@ GameObject:
   - component: {fileID: 321723856}
   - component: {fileID: 321723859}
   - component: {fileID: 321723858}
-  m_Layer: 6
+  m_Layer: 0
   m_Name: IndustrialTile (24)
-  m_TagString: Ground
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1625,7 +1689,7 @@ GameObject:
   - component: {fileID: 339005664}
   - component: {fileID: 339005666}
   - component: {fileID: 339005665}
-  m_Layer: 6
+  m_Layer: 0
   m_Name: IndustrialTileR (22)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1703,9 +1767,9 @@ GameObject:
   - component: {fileID: 341593279}
   - component: {fileID: 341593282}
   - component: {fileID: 341593281}
-  m_Layer: 6
+  m_Layer: 0
   m_Name: IndustrialTile (15)
-  m_TagString: Ground
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1920,7 +1984,7 @@ GameObject:
   - component: {fileID: 370526982}
   - component: {fileID: 370526984}
   - component: {fileID: 370526983}
-  m_Layer: 6
+  m_Layer: 0
   m_Name: IndustrialTileR (20)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1998,9 +2062,9 @@ GameObject:
   - component: {fileID: 373227821}
   - component: {fileID: 373227824}
   - component: {fileID: 373227823}
-  m_Layer: 6
+  m_Layer: 0
   m_Name: IndustrialTile (4)
-  m_TagString: Ground
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2154,9 +2218,9 @@ GameObject:
   - component: {fileID: 381286937}
   - component: {fileID: 381286940}
   - component: {fileID: 381286939}
-  m_Layer: 6
+  m_Layer: 0
   m_Name: IndustrialTile (8)
-  m_TagString: Ground
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2310,9 +2374,9 @@ GameObject:
   - component: {fileID: 407493412}
   - component: {fileID: 407493415}
   - component: {fileID: 407493414}
-  m_Layer: 6
+  m_Layer: 0
   m_Name: IndustrialTile (31)
-  m_TagString: Ground
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2464,7 +2528,7 @@ GameObject:
   - component: {fileID: 451496267}
   - component: {fileID: 451496269}
   - component: {fileID: 451496268}
-  m_Layer: 6
+  m_Layer: 0
   m_Name: IndustrialTileR (7)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2540,7 +2604,7 @@ GameObject:
   - component: {fileID: 462963089}
   - component: {fileID: 462963091}
   - component: {fileID: 462963090}
-  m_Layer: 6
+  m_Layer: 0
   m_Name: IndustrialTileR (25)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2616,7 +2680,7 @@ GameObject:
   - component: {fileID: 477849180}
   - component: {fileID: 477849182}
   - component: {fileID: 477849181}
-  m_Layer: 6
+  m_Layer: 0
   m_Name: IndustrialTileR (4)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2693,9 +2757,9 @@ GameObject:
   - component: {fileID: 536646539}
   - component: {fileID: 536646538}
   - component: {fileID: 536646540}
-  m_Layer: 6
+  m_Layer: 0
   m_Name: IndustrialTile (58)
-  m_TagString: Ground
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2797,9 +2861,9 @@ GameObject:
   - component: {fileID: 643018098}
   - component: {fileID: 643018101}
   - component: {fileID: 643018100}
-  m_Layer: 6
+  m_Layer: 0
   m_Name: IndustrialTile (12)
-  m_TagString: Ground
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2951,7 +3015,7 @@ GameObject:
   - component: {fileID: 654531100}
   - component: {fileID: 654531102}
   - component: {fileID: 654531101}
-  m_Layer: 6
+  m_Layer: 0
   m_Name: IndustrialTile (43)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3029,9 +3093,9 @@ GameObject:
   - component: {fileID: 665972049}
   - component: {fileID: 665972052}
   - component: {fileID: 665972051}
-  m_Layer: 6
+  m_Layer: 0
   m_Name: IndustrialTile (7)
-  m_TagString: Ground
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3183,7 +3247,7 @@ GameObject:
   - component: {fileID: 686430571}
   - component: {fileID: 686430573}
   - component: {fileID: 686430572}
-  m_Layer: 6
+  m_Layer: 0
   m_Name: IndustrialTile (45)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3261,9 +3325,9 @@ GameObject:
   - component: {fileID: 748009660}
   - component: {fileID: 748009663}
   - component: {fileID: 748009662}
-  m_Layer: 6
+  m_Layer: 0
   m_Name: IndustrialTile (52)
-  m_TagString: Ground
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3417,9 +3481,9 @@ GameObject:
   - component: {fileID: 758840047}
   - component: {fileID: 758840050}
   - component: {fileID: 758840049}
-  m_Layer: 6
+  m_Layer: 0
   m_Name: IndustrialTile (9)
-  m_TagString: Ground
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3573,9 +3637,9 @@ GameObject:
   - component: {fileID: 797904706}
   - component: {fileID: 797904709}
   - component: {fileID: 797904708}
-  m_Layer: 6
+  m_Layer: 0
   m_Name: IndustrialTile (16)
-  m_TagString: Ground
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3727,7 +3791,7 @@ GameObject:
   - component: {fileID: 862386320}
   - component: {fileID: 862386322}
   - component: {fileID: 862386321}
-  m_Layer: 6
+  m_Layer: 0
   m_Name: IndustrialTile (55)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3805,9 +3869,9 @@ GameObject:
   - component: {fileID: 890788437}
   - component: {fileID: 890788440}
   - component: {fileID: 890788439}
-  m_Layer: 6
+  m_Layer: 0
   m_Name: IndustrialTile (6)
-  m_TagString: Ground
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3961,9 +4025,9 @@ GameObject:
   - component: {fileID: 902194312}
   - component: {fileID: 902194315}
   - component: {fileID: 902194314}
-  m_Layer: 6
+  m_Layer: 0
   m_Name: IndustrialTile (14)
-  m_TagString: Ground
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4180,9 +4244,9 @@ GameObject:
   - component: {fileID: 935638283}
   - component: {fileID: 935638286}
   - component: {fileID: 935638285}
-  m_Layer: 6
+  m_Layer: 0
   m_Name: IndustrialTile (35)
-  m_TagString: Ground
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4334,7 +4398,7 @@ GameObject:
   - component: {fileID: 969777354}
   - component: {fileID: 969777356}
   - component: {fileID: 969777355}
-  m_Layer: 6
+  m_Layer: 0
   m_Name: IndustrialTileR (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4410,7 +4474,7 @@ GameObject:
   - component: {fileID: 1010110003}
   - component: {fileID: 1010110005}
   - component: {fileID: 1010110004}
-  m_Layer: 6
+  m_Layer: 0
   m_Name: IndustrialTileR (10)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4488,9 +4552,9 @@ GameObject:
   - component: {fileID: 1014487002}
   - component: {fileID: 1014487005}
   - component: {fileID: 1014487004}
-  m_Layer: 6
+  m_Layer: 0
   m_Name: IndustrialTile (27)
-  m_TagString: Ground
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4644,9 +4708,9 @@ GameObject:
   - component: {fileID: 1045187896}
   - component: {fileID: 1045187899}
   - component: {fileID: 1045187898}
-  m_Layer: 6
+  m_Layer: 0
   m_Name: IndustrialTile (3)
-  m_TagString: Ground
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4798,7 +4862,7 @@ GameObject:
   - component: {fileID: 1049366485}
   - component: {fileID: 1049366487}
   - component: {fileID: 1049366486}
-  m_Layer: 6
+  m_Layer: 0
   m_Name: IndustrialTileR (29)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4937,7 +5001,7 @@ GameObject:
   - component: {fileID: 1064929109}
   - component: {fileID: 1064929111}
   - component: {fileID: 1064929110}
-  m_Layer: 6
+  m_Layer: 0
   m_Name: IndustrialTile (48)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5002,6 +5066,42 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1064929108}
   m_CullTransparentMesh: 1
+--- !u!1 &1069817425
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1069817426}
+  m_Layer: 7
+  m_Name: Ground Check
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1069817426
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1069817425}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 90982107}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: -0.002, y: -0.318}
+  m_SizeDelta: {x: 100, y: 100}
+  m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &1087054623
 GameObject:
   m_ObjectHideFlags: 0
@@ -5015,9 +5115,9 @@ GameObject:
   - component: {fileID: 1087054625}
   - component: {fileID: 1087054628}
   - component: {fileID: 1087054627}
-  m_Layer: 6
+  m_Layer: 0
   m_Name: IndustrialTile (33)
-  m_TagString: Ground
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5158,6 +5258,42 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
+--- !u!1 &1108613350
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1108613351}
+  m_Layer: 7
+  m_Name: Ceiling Check
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1108613351
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1108613350}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 90982107}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: 0.109}
+  m_SizeDelta: {x: 100, y: 100}
+  m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &1134570177
 GameObject:
   m_ObjectHideFlags: 0
@@ -5171,9 +5307,9 @@ GameObject:
   - component: {fileID: 1134570179}
   - component: {fileID: 1134570182}
   - component: {fileID: 1134570181}
-  m_Layer: 6
+  m_Layer: 0
   m_Name: IndustrialTile (30)
-  m_TagString: Ground
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5325,7 +5461,7 @@ GameObject:
   - component: {fileID: 1169429598}
   - component: {fileID: 1169429600}
   - component: {fileID: 1169429599}
-  m_Layer: 6
+  m_Layer: 0
   m_Name: IndustrialTileR (26)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5403,9 +5539,9 @@ GameObject:
   - component: {fileID: 1202950188}
   - component: {fileID: 1202950191}
   - component: {fileID: 1202950190}
-  m_Layer: 6
+  m_Layer: 0
   m_Name: IndustrialTile (34)
-  m_TagString: Ground
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5557,7 +5693,7 @@ GameObject:
   - component: {fileID: 1224564153}
   - component: {fileID: 1224564155}
   - component: {fileID: 1224564154}
-  m_Layer: 6
+  m_Layer: 0
   m_Name: IndustrialTile (54)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5635,9 +5771,9 @@ GameObject:
   - component: {fileID: 1240552048}
   - component: {fileID: 1240552051}
   - component: {fileID: 1240552050}
-  m_Layer: 6
+  m_Layer: 0
   m_Name: IndustrialTile (2)
-  m_TagString: Ground
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5789,7 +5925,7 @@ GameObject:
   - component: {fileID: 1248749329}
   - component: {fileID: 1248749331}
   - component: {fileID: 1248749330}
-  m_Layer: 6
+  m_Layer: 0
   m_Name: IndustrialTileR (15)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5865,7 +6001,7 @@ GameObject:
   - component: {fileID: 1261573437}
   - component: {fileID: 1261573439}
   - component: {fileID: 1261573438}
-  m_Layer: 6
+  m_Layer: 0
   m_Name: IndustrialTile (39)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5942,9 +6078,9 @@ GameObject:
   - component: {fileID: 1273211352}
   - component: {fileID: 1273211351}
   - component: {fileID: 1273211353}
-  m_Layer: 6
+  m_Layer: 0
   m_Name: IndustrialTile (59)
-  m_TagString: Ground
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6044,7 +6180,7 @@ GameObject:
   - component: {fileID: 1274356537}
   - component: {fileID: 1274356539}
   - component: {fileID: 1274356538}
-  m_Layer: 6
+  m_Layer: 0
   m_Name: IndustrialTileR (13)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6120,7 +6256,7 @@ GameObject:
   - component: {fileID: 1275649928}
   - component: {fileID: 1275649930}
   - component: {fileID: 1275649929}
-  m_Layer: 6
+  m_Layer: 0
   m_Name: IndustrialTileR (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6329,7 +6465,7 @@ GameObject:
   - component: {fileID: 1308198665}
   - component: {fileID: 1308198667}
   - component: {fileID: 1308198666}
-  m_Layer: 6
+  m_Layer: 0
   m_Name: IndustrialTileR (21)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6507,7 +6643,7 @@ GameObject:
   - component: {fileID: 1327969534}
   - component: {fileID: 1327969536}
   - component: {fileID: 1327969535}
-  m_Layer: 6
+  m_Layer: 0
   m_Name: IndustrialTileR (11)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6585,9 +6721,9 @@ GameObject:
   - component: {fileID: 1334784913}
   - component: {fileID: 1334784916}
   - component: {fileID: 1334784915}
-  m_Layer: 6
+  m_Layer: 0
   m_Name: IndustrialTile (5)
-  m_TagString: Ground
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6739,9 +6875,9 @@ GameObject:
   - component: {fileID: 1419612983}
   - component: {fileID: 1419612985}
   - component: {fileID: 1419612984}
-  m_Layer: 6
+  m_Layer: 0
   m_Name: IndustrialTile (49)
-  m_TagString: Ground
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6815,7 +6951,7 @@ GameObject:
   - component: {fileID: 1435304357}
   - component: {fileID: 1435304359}
   - component: {fileID: 1435304358}
-  m_Layer: 6
+  m_Layer: 0
   m_Name: IndustrialTileR (16)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6893,9 +7029,9 @@ GameObject:
   - component: {fileID: 1444789924}
   - component: {fileID: 1444789927}
   - component: {fileID: 1444789926}
-  m_Layer: 6
+  m_Layer: 0
   m_Name: IndustrialTile (19)
-  m_TagString: Ground
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7047,9 +7183,9 @@ GameObject:
   - component: {fileID: 1459132515}
   - component: {fileID: 1459132517}
   - component: {fileID: 1459132516}
-  m_Layer: 6
+  m_Layer: 0
   m_Name: IndustrialTile (10)
-  m_TagString: Ground
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7188,9 +7324,9 @@ GameObject:
   - component: {fileID: 1516911219}
   - component: {fileID: 1516911222}
   - component: {fileID: 1516911221}
-  m_Layer: 6
+  m_Layer: 0
   m_Name: IndustrialTile (29)
-  m_TagString: Ground
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7342,7 +7478,7 @@ GameObject:
   - component: {fileID: 1532651525}
   - component: {fileID: 1532651527}
   - component: {fileID: 1532651526}
-  m_Layer: 6
+  m_Layer: 0
   m_Name: IndustrialTile (44)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7418,7 +7554,7 @@ GameObject:
   - component: {fileID: 1580742806}
   - component: {fileID: 1580742808}
   - component: {fileID: 1580742807}
-  m_Layer: 6
+  m_Layer: 0
   m_Name: IndustrialTileR (19)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7494,7 +7630,7 @@ GameObject:
   - component: {fileID: 1589319280}
   - component: {fileID: 1589319282}
   - component: {fileID: 1589319281}
-  m_Layer: 6
+  m_Layer: 0
   m_Name: IndustrialTileR (9)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7656,7 +7792,7 @@ GameObject:
   - component: {fileID: 1664223850}
   - component: {fileID: 1664223852}
   - component: {fileID: 1664223851}
-  m_Layer: 6
+  m_Layer: 0
   m_Name: IndustrialTileR (14)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7734,9 +7870,9 @@ GameObject:
   - component: {fileID: 1676992745}
   - component: {fileID: 1676992748}
   - component: {fileID: 1676992747}
-  m_Layer: 6
+  m_Layer: 0
   m_Name: IndustrialTile (17)
-  m_TagString: Ground
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7888,7 +8024,7 @@ GameObject:
   - component: {fileID: 1696422137}
   - component: {fileID: 1696422139}
   - component: {fileID: 1696422138}
-  m_Layer: 6
+  m_Layer: 0
   m_Name: IndustrialTile (56)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7966,9 +8102,9 @@ GameObject:
   - component: {fileID: 1726261662}
   - component: {fileID: 1726261665}
   - component: {fileID: 1726261664}
-  m_Layer: 6
+  m_Layer: 0
   m_Name: IndustrialTile (50)
-  m_TagString: Ground
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -8120,7 +8256,7 @@ GameObject:
   - component: {fileID: 1782766825}
   - component: {fileID: 1782766827}
   - component: {fileID: 1782766826}
-  m_Layer: 6
+  m_Layer: 0
   m_Name: IndustrialTile (47)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8198,9 +8334,9 @@ GameObject:
   - component: {fileID: 1790017897}
   - component: {fileID: 1790017900}
   - component: {fileID: 1790017899}
-  m_Layer: 6
+  m_Layer: 0
   m_Name: IndustrialTile (28)
-  m_TagString: Ground
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -8354,9 +8490,9 @@ GameObject:
   - component: {fileID: 1812256322}
   - component: {fileID: 1812256325}
   - component: {fileID: 1812256324}
-  m_Layer: 6
+  m_Layer: 0
   m_Name: IndustrialTile (36)
-  m_TagString: Ground
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -8508,7 +8644,7 @@ GameObject:
   - component: {fileID: 1815656870}
   - component: {fileID: 1815656872}
   - component: {fileID: 1815656871}
-  m_Layer: 6
+  m_Layer: 0
   m_Name: IndustrialTileR (18)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8584,7 +8720,7 @@ GameObject:
   - component: {fileID: 1820359250}
   - component: {fileID: 1820359252}
   - component: {fileID: 1820359251}
-  m_Layer: 6
+  m_Layer: 0
   m_Name: IndustrialTileR (28)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8660,7 +8796,7 @@ GameObject:
   - component: {fileID: 1822365945}
   - component: {fileID: 1822365947}
   - component: {fileID: 1822365946}
-  m_Layer: 6
+  m_Layer: 0
   m_Name: IndustrialTileR (8)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8736,7 +8872,7 @@ GameObject:
   - component: {fileID: 1836626670}
   - component: {fileID: 1836626672}
   - component: {fileID: 1836626671}
-  m_Layer: 6
+  m_Layer: 0
   m_Name: IndustrialTileR (17)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8814,9 +8950,9 @@ GameObject:
   - component: {fileID: 1882626131}
   - component: {fileID: 1882626134}
   - component: {fileID: 1882626133}
-  m_Layer: 6
+  m_Layer: 0
   m_Name: IndustrialTile (51)
-  m_TagString: Ground
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -8968,7 +9104,7 @@ GameObject:
   - component: {fileID: 1908876359}
   - component: {fileID: 1908876361}
   - component: {fileID: 1908876360}
-  m_Layer: 6
+  m_Layer: 0
   m_Name: IndustrialTileR (23)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9046,9 +9182,9 @@ GameObject:
   - component: {fileID: 1909963791}
   - component: {fileID: 1909963794}
   - component: {fileID: 1909963793}
-  m_Layer: 6
+  m_Layer: 0
   m_Name: IndustrialTile (20)
-  m_TagString: Ground
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -9202,9 +9338,9 @@ GameObject:
   - component: {fileID: 1911642371}
   - component: {fileID: 1911642374}
   - component: {fileID: 1911642373}
-  m_Layer: 6
+  m_Layer: 0
   m_Name: IndustrialTile (13)
-  m_TagString: Ground
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -9358,9 +9494,9 @@ GameObject:
   - component: {fileID: 1919677274}
   - component: {fileID: 1919677277}
   - component: {fileID: 1919677276}
-  m_Layer: 6
+  m_Layer: 0
   m_Name: IndustrialTile (53)
-  m_TagString: Ground
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -9512,7 +9648,7 @@ GameObject:
   - component: {fileID: 1948643905}
   - component: {fileID: 1948643907}
   - component: {fileID: 1948643906}
-  m_Layer: 6
+  m_Layer: 0
   m_Name: IndustrialTileR (24)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9588,9 +9724,9 @@ GameObject:
   - component: {fileID: 1950178494}
   - component: {fileID: 1950178496}
   - component: {fileID: 1950178495}
-  m_Layer: 6
+  m_Layer: 0
   m_Name: IndustrialTile (60)
-  m_TagString: Ground
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -9666,9 +9802,9 @@ GameObject:
   - component: {fileID: 1970344128}
   - component: {fileID: 1970344131}
   - component: {fileID: 1970344130}
-  m_Layer: 6
+  m_Layer: 0
   m_Name: IndustrialTile (25)
-  m_TagString: Ground
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -9820,7 +9956,7 @@ GameObject:
   - component: {fileID: 1984469956}
   - component: {fileID: 1984469958}
   - component: {fileID: 1984469957}
-  m_Layer: 6
+  m_Layer: 0
   m_Name: IndustrialTileR (12)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9896,7 +10032,7 @@ GameObject:
   - component: {fileID: 1985759855}
   - component: {fileID: 1985759857}
   - component: {fileID: 1985759856}
-  m_Layer: 6
+  m_Layer: 0
   m_Name: IndustrialTile (40)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9974,9 +10110,9 @@ GameObject:
   - component: {fileID: 1994448129}
   - component: {fileID: 1994448132}
   - component: {fileID: 1994448131}
-  m_Layer: 6
+  m_Layer: 0
   m_Name: IndustrialTile (38)
-  m_TagString: Ground
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -10128,7 +10264,7 @@ GameObject:
   - component: {fileID: 2011060030}
   - component: {fileID: 2011060032}
   - component: {fileID: 2011060031}
-  m_Layer: 6
+  m_Layer: 0
   m_Name: IndustrialTileR (27)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -10206,9 +10342,9 @@ GameObject:
   - component: {fileID: 2011568467}
   - component: {fileID: 2011568470}
   - component: {fileID: 2011568469}
-  m_Layer: 6
+  m_Layer: 0
   m_Name: IndustrialTile (22)
-  m_TagString: Ground
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -10425,9 +10561,9 @@ GameObject:
   - component: {fileID: 2023750665}
   - component: {fileID: 2023750668}
   - component: {fileID: 2023750667}
-  m_Layer: 6
+  m_Layer: 0
   m_Name: IndustrialTile (37)
-  m_TagString: Ground
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -10642,7 +10778,7 @@ GameObject:
   - component: {fileID: 2077965195}
   - component: {fileID: 2077965197}
   - component: {fileID: 2077965196}
-  m_Layer: 6
+  m_Layer: 0
   m_Name: IndustrialTile (57)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -10867,9 +11003,9 @@ GameObject:
   - component: {fileID: 2118321335}
   - component: {fileID: 2118321338}
   - component: {fileID: 2118321337}
-  m_Layer: 6
+  m_Layer: 0
   m_Name: IndustrialTile (26)
-  m_TagString: Ground
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -11021,7 +11157,7 @@ GameObject:
   - component: {fileID: 2118336534}
   - component: {fileID: 2118336536}
   - component: {fileID: 2118336535}
-  m_Layer: 6
+  m_Layer: 0
   m_Name: IndustrialTileR
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -11097,7 +11233,7 @@ GameObject:
   - component: {fileID: 2127431676}
   - component: {fileID: 2127431678}
   - component: {fileID: 2127431677}
-  m_Layer: 6
+  m_Layer: 0
   m_Name: IndustrialTile (41)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -11175,9 +11311,9 @@ GameObject:
   - component: {fileID: 2136216470}
   - component: {fileID: 2136216473}
   - component: {fileID: 2136216472}
-  m_Layer: 6
+  m_Layer: 0
   m_Name: IndustrialTile (1)
-  m_TagString: Ground
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

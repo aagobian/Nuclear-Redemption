@@ -4,6 +4,7 @@ public class PlayerController : MonoBehaviour
 {
     public float moveSpeed = 5f;
     public float jumpForce = 5f;
+    public Animator animator;
     private bool isJumping = false;
     private Rigidbody2D rb;
 
@@ -16,6 +17,8 @@ public class PlayerController : MonoBehaviour
     {
         // Move character horizontally
         float moveX = Input.GetAxis("Horizontal");
+
+        animator.SetFloat("Speed", Mathf.Abs(moveX));
         rb.velocity = new Vector2(moveX * moveSpeed, rb.velocity.y);
 
         // Make character jump
@@ -28,7 +31,7 @@ public class PlayerController : MonoBehaviour
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        // Check if character touches the ground
+        // Check if character touches the ground for jump procedure
         if (collision.gameObject.CompareTag("Ground"))
         {
             isJumping = false;
