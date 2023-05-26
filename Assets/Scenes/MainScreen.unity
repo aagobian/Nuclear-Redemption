@@ -719,7 +719,7 @@ GameObject:
   - component: {fileID: 1334686656}
   - component: {fileID: 1334686657}
   m_Layer: 5
-  m_Name: GameObject
+  m_Name: Trans 1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -754,11 +754,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 1334686655}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7d3e0a1e6c0b62943b8145f7cba06b63, type: 3}
+  m_Script: {fileID: 11500000, guid: f85164025b63926479c4230a8742029a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  transitionAnimator: {fileID: 2128594752}
-  targetScene: Scene1
+  nextScreen: {fileID: 1334686655}
+  animator: {fileID: 8430430085981769742, guid: 47f8dc7923182b040ab0066653473b99, type: 3}
 --- !u!1 &1370918834
 GameObject:
   m_ObjectHideFlags: 0
@@ -1075,8 +1075,8 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1334686657}
-        m_TargetAssemblyTypeName: kkk1, Assembly-CSharp
-        m_MethodName: PlaySceneTransition
+        m_TargetAssemblyTypeName: jjj, Assembly-CSharp
+        m_MethodName: TransitionToNextScreen
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1124,8 +1124,3 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1888393197}
   m_CullTransparentMesh: 1
---- !u!95 &2128594752 stripped
-Animator:
-  m_CorrespondingSourceObject: {fileID: 6407563809570603609, guid: 88f22c2fe25389f49b0794147df67d44, type: 3}
-  m_PrefabInstance: {fileID: 1018073419}
-  m_PrefabAsset: {fileID: 0}
