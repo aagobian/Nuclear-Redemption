@@ -508,8 +508,8 @@ GameObject:
   - component: {fileID: 171395985}
   - component: {fileID: 171395987}
   - component: {fileID: 171395986}
-  - component: {fileID: 171395989}
   - component: {fileID: 171395988}
+  - component: {fileID: 171395989}
   m_Layer: 6
   m_Name: IndustrialTile (32)
   m_TagString: Ground
@@ -664,8 +664,8 @@ GameObject:
   - component: {fileID: 183440372}
   - component: {fileID: 183440374}
   - component: {fileID: 183440373}
-  - component: {fileID: 183440376}
   - component: {fileID: 183440375}
+  - component: {fileID: 183440376}
   m_Layer: 6
   m_Name: IndustrialTile (21)
   m_TagString: Ground
@@ -1048,8 +1048,8 @@ GameObject:
   - component: {fileID: 291950949}
   - component: {fileID: 291950951}
   - component: {fileID: 291950950}
-  - component: {fileID: 291950953}
   - component: {fileID: 291950952}
+  - component: {fileID: 291950953}
   m_Layer: 6
   m_Name: IndustrialTile (23)
   m_TagString: Ground
@@ -1204,8 +1204,8 @@ GameObject:
   - component: {fileID: 294417165}
   - component: {fileID: 294417167}
   - component: {fileID: 294417166}
-  - component: {fileID: 294417169}
   - component: {fileID: 294417168}
+  - component: {fileID: 294417169}
   m_Layer: 6
   m_Name: IndustrialTile
   m_TagString: Ground
@@ -1360,8 +1360,8 @@ GameObject:
   - component: {fileID: 301341090}
   - component: {fileID: 301341092}
   - component: {fileID: 301341091}
-  - component: {fileID: 301341094}
   - component: {fileID: 301341093}
+  - component: {fileID: 301341094}
   m_Layer: 6
   m_Name: IndustrialTile (18)
   m_TagString: Ground
@@ -1516,8 +1516,8 @@ GameObject:
   - component: {fileID: 321723855}
   - component: {fileID: 321723857}
   - component: {fileID: 321723856}
-  - component: {fileID: 321723859}
   - component: {fileID: 321723858}
+  - component: {fileID: 321723859}
   m_Layer: 6
   m_Name: IndustrialTile (24)
   m_TagString: Ground
@@ -1749,7 +1749,7 @@ GameObject:
   - component: {fileID: 341593280}
   - component: {fileID: 341593279}
   - component: {fileID: 341593282}
-  - component: {fileID: 341593281}
+  - component: {fileID: 341593283}
   m_Layer: 6
   m_Name: IndustrialTile (15)
   m_TagString: Ground
@@ -1815,32 +1815,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 341593277}
   m_CullTransparentMesh: 1
---- !u!61 &341593281
-BoxCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 341593277}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0, y: 0}
-    oldSize: {x: 0, y: 0}
-    newSize: {x: 0, y: 0}
-    adaptiveTilingThreshold: 0
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 1, y: 1}
-  m_EdgeRadius: 0
 --- !u!212 &341593282
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -1893,6 +1867,32 @@ SpriteRenderer:
   m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!61 &341593283
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 341593277}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1}
+  m_EdgeRadius: 0
 --- !u!1 &354429744
 GameObject:
   m_ObjectHideFlags: 0
@@ -2044,7 +2044,7 @@ GameObject:
   - component: {fileID: 373227822}
   - component: {fileID: 373227821}
   - component: {fileID: 373227824}
-  - component: {fileID: 373227823}
+  - component: {fileID: 373227825}
   m_Layer: 6
   m_Name: IndustrialTile (4)
   m_TagString: Ground
@@ -2110,32 +2110,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 373227819}
   m_CullTransparentMesh: 1
---- !u!61 &373227823
-BoxCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 373227819}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0, y: 0}
-    oldSize: {x: 0, y: 0}
-    newSize: {x: 0, y: 0}
-    adaptiveTilingThreshold: 0
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 0.0001, y: 0.0001}
-  m_EdgeRadius: 0
 --- !u!212 &373227824
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -2188,6 +2162,32 @@ SpriteRenderer:
   m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!61 &373227825
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 373227819}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1}
+  m_EdgeRadius: 0
 --- !u!1 &381286935
 GameObject:
   m_ObjectHideFlags: 0
@@ -2200,7 +2200,7 @@ GameObject:
   - component: {fileID: 381286938}
   - component: {fileID: 381286937}
   - component: {fileID: 381286940}
-  - component: {fileID: 381286939}
+  - component: {fileID: 381286941}
   m_Layer: 6
   m_Name: IndustrialTile (8)
   m_TagString: Ground
@@ -2266,32 +2266,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 381286935}
   m_CullTransparentMesh: 1
---- !u!61 &381286939
-BoxCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 381286935}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0, y: 0}
-    oldSize: {x: 0, y: 0}
-    newSize: {x: 0, y: 0}
-    adaptiveTilingThreshold: 0
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 0.0001, y: 0.0001}
-  m_EdgeRadius: 0
 --- !u!212 &381286940
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -2344,6 +2318,32 @@ SpriteRenderer:
   m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!61 &381286941
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 381286935}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1}
+  m_EdgeRadius: 0
 --- !u!1 &407493410
 GameObject:
   m_ObjectHideFlags: 0
@@ -2355,8 +2355,8 @@ GameObject:
   - component: {fileID: 407493411}
   - component: {fileID: 407493413}
   - component: {fileID: 407493412}
-  - component: {fileID: 407493415}
   - component: {fileID: 407493414}
+  - component: {fileID: 407493415}
   m_Layer: 6
   m_Name: IndustrialTile (31)
   m_TagString: Ground
@@ -2842,8 +2842,8 @@ GameObject:
   - component: {fileID: 643018097}
   - component: {fileID: 643018099}
   - component: {fileID: 643018098}
-  - component: {fileID: 643018101}
   - component: {fileID: 643018100}
+  - component: {fileID: 643018101}
   m_Layer: 6
   m_Name: IndustrialTile (12)
   m_TagString: Ground
@@ -3075,7 +3075,7 @@ GameObject:
   - component: {fileID: 665972050}
   - component: {fileID: 665972049}
   - component: {fileID: 665972052}
-  - component: {fileID: 665972051}
+  - component: {fileID: 665972053}
   m_Layer: 6
   m_Name: IndustrialTile (7)
   m_TagString: Ground
@@ -3141,32 +3141,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 665972047}
   m_CullTransparentMesh: 1
---- !u!61 &665972051
-BoxCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 665972047}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0, y: 0}
-    oldSize: {x: 0, y: 0}
-    newSize: {x: 0, y: 0}
-    adaptiveTilingThreshold: 0
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 0.0001, y: 0.0001}
-  m_EdgeRadius: 0
 --- !u!212 &665972052
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -3219,6 +3193,32 @@ SpriteRenderer:
   m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!61 &665972053
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 665972047}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1}
+  m_EdgeRadius: 0
 --- !u!1 &686430570
 GameObject:
   m_ObjectHideFlags: 0
@@ -3307,7 +3307,7 @@ GameObject:
   - component: {fileID: 748009661}
   - component: {fileID: 748009660}
   - component: {fileID: 748009663}
-  - component: {fileID: 748009662}
+  - component: {fileID: 748009664}
   m_Layer: 6
   m_Name: IndustrialTile (52)
   m_TagString: Ground
@@ -3373,32 +3373,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 748009658}
   m_CullTransparentMesh: 1
---- !u!61 &748009662
-BoxCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 748009658}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0, y: 0}
-    oldSize: {x: 0, y: 0}
-    newSize: {x: 0, y: 0}
-    adaptiveTilingThreshold: 0
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 1, y: 1}
-  m_EdgeRadius: 0
 --- !u!212 &748009663
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -3451,6 +3425,32 @@ SpriteRenderer:
   m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!61 &748009664
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 748009658}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1}
+  m_EdgeRadius: 0
 --- !u!1 &758840045
 GameObject:
   m_ObjectHideFlags: 0
@@ -3463,7 +3463,7 @@ GameObject:
   - component: {fileID: 758840048}
   - component: {fileID: 758840047}
   - component: {fileID: 758840050}
-  - component: {fileID: 758840049}
+  - component: {fileID: 758840051}
   m_Layer: 6
   m_Name: IndustrialTile (9)
   m_TagString: Ground
@@ -3529,32 +3529,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 758840045}
   m_CullTransparentMesh: 1
---- !u!61 &758840049
-BoxCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 758840045}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0, y: 0}
-    oldSize: {x: 0, y: 0}
-    newSize: {x: 0, y: 0}
-    adaptiveTilingThreshold: 0
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 0.0001, y: 0.0001}
-  m_EdgeRadius: 0
 --- !u!212 &758840050
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -3607,6 +3581,32 @@ SpriteRenderer:
   m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!61 &758840051
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 758840045}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1}
+  m_EdgeRadius: 0
 --- !u!1 &797904704
 GameObject:
   m_ObjectHideFlags: 0
@@ -3618,8 +3618,8 @@ GameObject:
   - component: {fileID: 797904705}
   - component: {fileID: 797904707}
   - component: {fileID: 797904706}
-  - component: {fileID: 797904709}
   - component: {fileID: 797904708}
+  - component: {fileID: 797904709}
   m_Layer: 6
   m_Name: IndustrialTile (16)
   m_TagString: Ground
@@ -3851,7 +3851,7 @@ GameObject:
   - component: {fileID: 890788438}
   - component: {fileID: 890788437}
   - component: {fileID: 890788440}
-  - component: {fileID: 890788439}
+  - component: {fileID: 890788441}
   m_Layer: 6
   m_Name: IndustrialTile (6)
   m_TagString: Ground
@@ -3917,32 +3917,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 890788435}
   m_CullTransparentMesh: 1
---- !u!61 &890788439
-BoxCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 890788435}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0, y: 0}
-    oldSize: {x: 0, y: 0}
-    newSize: {x: 0, y: 0}
-    adaptiveTilingThreshold: 0
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 1, y: 1}
-  m_EdgeRadius: 0
 --- !u!212 &890788440
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -3995,6 +3969,32 @@ SpriteRenderer:
   m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!61 &890788441
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 890788435}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1}
+  m_EdgeRadius: 0
 --- !u!1 &902194310
 GameObject:
   m_ObjectHideFlags: 0
@@ -4006,8 +4006,8 @@ GameObject:
   - component: {fileID: 902194311}
   - component: {fileID: 902194313}
   - component: {fileID: 902194312}
-  - component: {fileID: 902194315}
   - component: {fileID: 902194314}
+  - component: {fileID: 902194315}
   m_Layer: 6
   m_Name: IndustrialTile (14)
   m_TagString: Ground
@@ -4225,8 +4225,8 @@ GameObject:
   - component: {fileID: 935638282}
   - component: {fileID: 935638284}
   - component: {fileID: 935638283}
-  - component: {fileID: 935638286}
   - component: {fileID: 935638285}
+  - component: {fileID: 935638286}
   m_Layer: 6
   m_Name: IndustrialTile (35)
   m_TagString: Ground
@@ -4533,8 +4533,8 @@ GameObject:
   - component: {fileID: 1014487001}
   - component: {fileID: 1014487003}
   - component: {fileID: 1014487002}
-  - component: {fileID: 1014487005}
   - component: {fileID: 1014487004}
+  - component: {fileID: 1014487005}
   m_Layer: 6
   m_Name: IndustrialTile (27)
   m_TagString: Ground
@@ -4690,7 +4690,7 @@ GameObject:
   - component: {fileID: 1045187897}
   - component: {fileID: 1045187896}
   - component: {fileID: 1045187899}
-  - component: {fileID: 1045187898}
+  - component: {fileID: 1045187900}
   m_Layer: 6
   m_Name: IndustrialTile (3)
   m_TagString: Ground
@@ -4756,32 +4756,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1045187894}
   m_CullTransparentMesh: 1
---- !u!61 &1045187898
-BoxCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1045187894}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0, y: 0}
-    oldSize: {x: 0, y: 0}
-    newSize: {x: 0, y: 0}
-    adaptiveTilingThreshold: 0
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 0.0001, y: 0.0001}
-  m_EdgeRadius: 0
 --- !u!212 &1045187899
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -4834,6 +4808,32 @@ SpriteRenderer:
   m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!61 &1045187900
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1045187894}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1}
+  m_EdgeRadius: 0
 --- !u!1 &1049366484
 GameObject:
   m_ObjectHideFlags: 0
@@ -5096,8 +5096,8 @@ GameObject:
   - component: {fileID: 1087054624}
   - component: {fileID: 1087054626}
   - component: {fileID: 1087054625}
-  - component: {fileID: 1087054628}
   - component: {fileID: 1087054627}
+  - component: {fileID: 1087054628}
   m_Layer: 6
   m_Name: IndustrialTile (33)
   m_TagString: Ground
@@ -5288,8 +5288,8 @@ GameObject:
   - component: {fileID: 1134570178}
   - component: {fileID: 1134570180}
   - component: {fileID: 1134570179}
-  - component: {fileID: 1134570182}
   - component: {fileID: 1134570181}
+  - component: {fileID: 1134570182}
   m_Layer: 6
   m_Name: IndustrialTile (30)
   m_TagString: Ground
@@ -5520,8 +5520,8 @@ GameObject:
   - component: {fileID: 1202950187}
   - component: {fileID: 1202950189}
   - component: {fileID: 1202950188}
-  - component: {fileID: 1202950191}
   - component: {fileID: 1202950190}
+  - component: {fileID: 1202950191}
   m_Layer: 6
   m_Name: IndustrialTile (34)
   m_TagString: Ground
@@ -5677,7 +5677,7 @@ GameObject:
   - component: {fileID: 1240552049}
   - component: {fileID: 1240552048}
   - component: {fileID: 1240552051}
-  - component: {fileID: 1240552050}
+  - component: {fileID: 1240552052}
   m_Layer: 6
   m_Name: IndustrialTile (2)
   m_TagString: Ground
@@ -5743,32 +5743,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1240552046}
   m_CullTransparentMesh: 1
---- !u!61 &1240552050
-BoxCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1240552046}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0, y: 0}
-    oldSize: {x: 0, y: 0}
-    newSize: {x: 0, y: 0}
-    adaptiveTilingThreshold: 0
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 1, y: 1}
-  m_EdgeRadius: 0
 --- !u!212 &1240552051
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -5821,6 +5795,32 @@ SpriteRenderer:
   m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!61 &1240552052
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1240552046}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1}
+  m_EdgeRadius: 0
 --- !u!1 &1248749328
 GameObject:
   m_ObjectHideFlags: 0
@@ -6625,7 +6625,7 @@ GameObject:
   - component: {fileID: 1334784914}
   - component: {fileID: 1334784913}
   - component: {fileID: 1334784916}
-  - component: {fileID: 1334784915}
+  - component: {fileID: 1334784917}
   m_Layer: 6
   m_Name: IndustrialTile (5)
   m_TagString: Ground
@@ -6691,32 +6691,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1334784911}
   m_CullTransparentMesh: 1
---- !u!61 &1334784915
-BoxCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1334784911}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0, y: 0}
-    oldSize: {x: 0, y: 0}
-    newSize: {x: 0, y: 0}
-    adaptiveTilingThreshold: 0
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 1, y: 1}
-  m_EdgeRadius: 0
 --- !u!212 &1334784916
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -6769,6 +6743,32 @@ SpriteRenderer:
   m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!61 &1334784917
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1334784911}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1}
+  m_EdgeRadius: 0
 --- !u!1 &1435304356
 GameObject:
   m_ObjectHideFlags: 0
@@ -6856,8 +6856,8 @@ GameObject:
   - component: {fileID: 1444789923}
   - component: {fileID: 1444789925}
   - component: {fileID: 1444789924}
-  - component: {fileID: 1444789927}
   - component: {fileID: 1444789926}
+  - component: {fileID: 1444789927}
   m_Layer: 6
   m_Name: IndustrialTile (19)
   m_TagString: Ground
@@ -7012,6 +7012,7 @@ GameObject:
   - component: {fileID: 1459132515}
   - component: {fileID: 1459132517}
   - component: {fileID: 1459132516}
+  - component: {fileID: 1459132518}
   m_Layer: 6
   m_Name: IndustrialTile (10)
   m_TagString: Ground
@@ -7077,6 +7078,32 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1459132514}
   m_CullTransparentMesh: 1
+--- !u!61 &1459132518
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1459132514}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1}
+  m_EdgeRadius: 0
 --- !u!1 &1513173074
 GameObject:
   m_ObjectHideFlags: 0
@@ -7151,8 +7178,8 @@ GameObject:
   - component: {fileID: 1516911218}
   - component: {fileID: 1516911220}
   - component: {fileID: 1516911219}
-  - component: {fileID: 1516911222}
   - component: {fileID: 1516911221}
+  - component: {fileID: 1516911222}
   m_Layer: 6
   m_Name: IndustrialTile (29)
   m_TagString: Ground
@@ -7697,8 +7724,8 @@ GameObject:
   - component: {fileID: 1676992744}
   - component: {fileID: 1676992746}
   - component: {fileID: 1676992745}
-  - component: {fileID: 1676992748}
   - component: {fileID: 1676992747}
+  - component: {fileID: 1676992748}
   m_Layer: 6
   m_Name: IndustrialTile (17)
   m_TagString: Ground
@@ -7930,7 +7957,7 @@ GameObject:
   - component: {fileID: 1726261663}
   - component: {fileID: 1726261662}
   - component: {fileID: 1726261665}
-  - component: {fileID: 1726261664}
+  - component: {fileID: 1726261666}
   m_Layer: 6
   m_Name: IndustrialTile (50)
   m_TagString: Ground
@@ -7996,32 +8023,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1726261660}
   m_CullTransparentMesh: 1
---- !u!61 &1726261664
-BoxCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1726261660}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0, y: 0}
-    oldSize: {x: 0, y: 0}
-    newSize: {x: 0, y: 0}
-    adaptiveTilingThreshold: 0
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 0.0001, y: 0.0001}
-  m_EdgeRadius: 0
 --- !u!212 &1726261665
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -8074,6 +8075,32 @@ SpriteRenderer:
   m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!61 &1726261666
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1726261660}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1}
+  m_EdgeRadius: 0
 --- !u!1 &1782766824
 GameObject:
   m_ObjectHideFlags: 0
@@ -8161,8 +8188,8 @@ GameObject:
   - component: {fileID: 1790017896}
   - component: {fileID: 1790017898}
   - component: {fileID: 1790017897}
-  - component: {fileID: 1790017900}
   - component: {fileID: 1790017899}
+  - component: {fileID: 1790017900}
   m_Layer: 6
   m_Name: IndustrialTile (28)
   m_TagString: Ground
@@ -8317,8 +8344,8 @@ GameObject:
   - component: {fileID: 1812256321}
   - component: {fileID: 1812256323}
   - component: {fileID: 1812256322}
-  - component: {fileID: 1812256325}
   - component: {fileID: 1812256324}
+  - component: {fileID: 1812256325}
   m_Layer: 6
   m_Name: IndustrialTile (36)
   m_TagString: Ground
@@ -8778,7 +8805,7 @@ GameObject:
   - component: {fileID: 1882626132}
   - component: {fileID: 1882626131}
   - component: {fileID: 1882626134}
-  - component: {fileID: 1882626133}
+  - component: {fileID: 1882626135}
   m_Layer: 6
   m_Name: IndustrialTile (51)
   m_TagString: Ground
@@ -8844,32 +8871,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1882626129}
   m_CullTransparentMesh: 1
---- !u!61 &1882626133
-BoxCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1882626129}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0, y: 0}
-    oldSize: {x: 0, y: 0}
-    newSize: {x: 0, y: 0}
-    adaptiveTilingThreshold: 0
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 1, y: 1}
-  m_EdgeRadius: 0
 --- !u!212 &1882626134
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -8922,6 +8923,32 @@ SpriteRenderer:
   m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!61 &1882626135
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1882626129}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1}
+  m_EdgeRadius: 0
 --- !u!1 &1908876358
 GameObject:
   m_ObjectHideFlags: 0
@@ -9009,8 +9036,8 @@ GameObject:
   - component: {fileID: 1909963790}
   - component: {fileID: 1909963792}
   - component: {fileID: 1909963791}
-  - component: {fileID: 1909963794}
   - component: {fileID: 1909963793}
+  - component: {fileID: 1909963794}
   m_Layer: 6
   m_Name: IndustrialTile (20)
   m_TagString: Ground
@@ -9165,8 +9192,8 @@ GameObject:
   - component: {fileID: 1911642370}
   - component: {fileID: 1911642372}
   - component: {fileID: 1911642371}
-  - component: {fileID: 1911642374}
   - component: {fileID: 1911642373}
+  - component: {fileID: 1911642374}
   m_Layer: 6
   m_Name: IndustrialTile (13)
   m_TagString: Ground
@@ -9322,7 +9349,7 @@ GameObject:
   - component: {fileID: 1919677275}
   - component: {fileID: 1919677274}
   - component: {fileID: 1919677277}
-  - component: {fileID: 1919677276}
+  - component: {fileID: 1919677278}
   m_Layer: 6
   m_Name: IndustrialTile (53)
   m_TagString: Ground
@@ -9388,32 +9415,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1919677272}
   m_CullTransparentMesh: 1
---- !u!61 &1919677276
-BoxCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1919677272}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0, y: 0}
-    oldSize: {x: 0, y: 0}
-    newSize: {x: 0, y: 0}
-    adaptiveTilingThreshold: 0
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 1, y: 1}
-  m_EdgeRadius: 0
 --- !u!212 &1919677277
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -9466,6 +9467,32 @@ SpriteRenderer:
   m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!61 &1919677278
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1919677272}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1}
+  m_EdgeRadius: 0
 --- !u!1 &1948643904
 GameObject:
   m_ObjectHideFlags: 0
@@ -9553,6 +9580,7 @@ GameObject:
   - component: {fileID: 1950178494}
   - component: {fileID: 1950178496}
   - component: {fileID: 1950178495}
+  - component: {fileID: 1950178497}
   m_Layer: 6
   m_Name: IndustrialTile (60)
   m_TagString: Ground
@@ -9618,6 +9646,32 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1950178493}
   m_CullTransparentMesh: 1
+--- !u!61 &1950178497
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1950178493}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1}
+  m_EdgeRadius: 0
 --- !u!1 &1970344126
 GameObject:
   m_ObjectHideFlags: 0
@@ -9629,8 +9683,8 @@ GameObject:
   - component: {fileID: 1970344127}
   - component: {fileID: 1970344129}
   - component: {fileID: 1970344128}
-  - component: {fileID: 1970344131}
   - component: {fileID: 1970344130}
+  - component: {fileID: 1970344131}
   m_Layer: 6
   m_Name: IndustrialTile (25)
   m_TagString: Ground
@@ -9937,8 +9991,8 @@ GameObject:
   - component: {fileID: 1994448128}
   - component: {fileID: 1994448130}
   - component: {fileID: 1994448129}
-  - component: {fileID: 1994448132}
   - component: {fileID: 1994448131}
+  - component: {fileID: 1994448132}
   m_Layer: 6
   m_Name: IndustrialTile (38)
   m_TagString: Ground
@@ -10169,8 +10223,8 @@ GameObject:
   - component: {fileID: 2011568466}
   - component: {fileID: 2011568468}
   - component: {fileID: 2011568467}
-  - component: {fileID: 2011568470}
   - component: {fileID: 2011568469}
+  - component: {fileID: 2011568470}
   m_Layer: 6
   m_Name: IndustrialTile (22)
   m_TagString: Ground
@@ -10388,8 +10442,8 @@ GameObject:
   - component: {fileID: 2023750664}
   - component: {fileID: 2023750666}
   - component: {fileID: 2023750665}
-  - component: {fileID: 2023750668}
   - component: {fileID: 2023750667}
+  - component: {fileID: 2023750668}
   m_Layer: 6
   m_Name: IndustrialTile (37)
   m_TagString: Ground
@@ -10830,8 +10884,8 @@ GameObject:
   - component: {fileID: 2118321334}
   - component: {fileID: 2118321336}
   - component: {fileID: 2118321335}
-  - component: {fileID: 2118321338}
   - component: {fileID: 2118321337}
+  - component: {fileID: 2118321338}
   m_Layer: 6
   m_Name: IndustrialTile (26)
   m_TagString: Ground
@@ -11139,7 +11193,7 @@ GameObject:
   - component: {fileID: 2136216471}
   - component: {fileID: 2136216470}
   - component: {fileID: 2136216473}
-  - component: {fileID: 2136216472}
+  - component: {fileID: 2136216474}
   m_Layer: 6
   m_Name: IndustrialTile (1)
   m_TagString: Ground
@@ -11205,32 +11259,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2136216468}
   m_CullTransparentMesh: 1
---- !u!61 &2136216472
-BoxCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2136216468}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0, y: 0}
-    oldSize: {x: 0, y: 0}
-    newSize: {x: 0, y: 0}
-    adaptiveTilingThreshold: 0
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 1, y: 1}
-  m_EdgeRadius: 0
 --- !u!212 &2136216473
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -11283,3 +11311,29 @@ SpriteRenderer:
   m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!61 &2136216474
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2136216468}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1}
+  m_EdgeRadius: 0
