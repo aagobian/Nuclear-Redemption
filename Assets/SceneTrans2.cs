@@ -2,14 +2,14 @@ using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 
-public class SceneTransition222 : MonoBehaviour
+public class SceneTrans2 : MonoBehaviour
 {
     public RectTransform animationImage;
     public Button startButton;
     public float expandDuration = 1.0f;
     public float stallDuration = 1.0f;
     public float shrinkDuration = 1.0f;
-    public string gameLevelSceneName = "Scene1";
+    public string gameLevelSceneName = "Credits";
 
     private bool isAnimating = false;
 
