@@ -1,10 +1,11 @@
 using System.Collections;
 using System.Collections.Generic;
+using System;
+using System.Threading.Tasks;
 using UnityEngine;
 
 public class Enemy : MonoBehaviour
 {
-
     public float health = 10;
     public Animator animator;
     public GameObject enemyName;
@@ -12,12 +13,13 @@ public class Enemy : MonoBehaviour
     public void TakeDamage(int damage)
     {
         health -= damage; 
-        animator.SetFloat("AHealth", health);
+        animator.SetTrigger("Hurt");
 
         if (health <= 0)
         {
             enemyName.GetComponent<EnemyMovement>().enabled = false;
-            Invoke("Die", 1);
+            animator.SetBool("isDead", true);
+            Invoke("Die", 2);
         }
     }
 
