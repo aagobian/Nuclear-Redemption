@@ -10,6 +10,13 @@ public class EnemyMovement : MonoBehaviour
     public Transform playerTransform;
     public bool isChasing;
     public float chaseDistance;
+    private float originalScaleX;
+
+    void Start()
+    {
+        // Retrieve the original X scale value
+        originalScaleX = transform.localScale.x;
+    }
 
     // Update is called once per frame
     void Update()
@@ -22,24 +29,24 @@ public class EnemyMovement : MonoBehaviour
 
                 if (transform.position.x > playerTransform.position.x)
                 {
-                transform.localScale = new Vector3(3, 3, 3);
+                transform.localScale = new Vector3(originalScaleX, transform.localScale.y, transform.localScale.z);
                 }
 
                 if (transform.position.x < playerTransform.position.x)
                 {
-                transform.localScale = new Vector3(-3, 3, 3);
+                transform.localScale = new Vector3(-originalScaleX, transform.localScale.y, transform.localScale.z);
                 }
             }
 
             if (transform.position.x > playerTransform.position.x)
             {
-                transform.localScale = new Vector3(3, 3, 3);
+                transform.localScale = new Vector3(originalScaleX, transform.localScale.y, transform.localScale.z);
                 transform.position += Vector3.left * moveSpeed * Time.deltaTime;
             }
 
             if (transform.position.x < playerTransform.position.x)
             {
-                transform.localScale = new Vector3(-3, 3, 3);
+                transform.localScale = new Vector3(-originalScaleX, transform.localScale.y, transform.localScale.z);
                 transform.position += Vector3.right * moveSpeed * Time.deltaTime;
             }
         }
@@ -56,7 +63,7 @@ public class EnemyMovement : MonoBehaviour
 
             if (Vector2.Distance(transform.position, patrolPoints[0].position) < .2f)
             {
-                transform.localScale = new Vector3(-3, 3, 3);
+                transform.localScale = new Vector3(-originalScaleX, transform.localScale.y, transform.localScale.z);
                 patrolDestination = 1;
             }
             }
@@ -67,13 +74,10 @@ public class EnemyMovement : MonoBehaviour
 
             if (Vector2.Distance(transform.position, patrolPoints[1].position) < .2f)
             {
-                transform.localScale = new Vector3(3, 3, 3);
+                transform.localScale = new Vector3(originalScaleX, transform.localScale.y, transform.localScale.z);
                 patrolDestination = 0;
             }
             }
-        }
-
-        
-        
+        }     
     }
 }
