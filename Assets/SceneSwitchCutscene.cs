@@ -7,7 +7,7 @@ public class SceneSwitchCutscene : MonoBehaviour
 {
     void Start()
     {
-        Invoke("CutSwitch", 37);
+        Invoke("CutSwitch", 17);
     }
 
     void CutSwitch()
